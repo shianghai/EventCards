@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardLl"
+    android:visibility="visible">
+    <com.google.android.material.card.MaterialCardView
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/mainCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginHorizontal="2dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+       >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/dayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Thursday"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+                />
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+
+                android:layout_marginVertical="10dp"
+                />
+
+            <TextView
+                android:id="@+id/courseNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dayTextView"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/cscd_205"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="5dp"
+
+                 />
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="10dp"
+
+                />
+
+
+            <View
+                android:id="@+id/timeView"
+                android:layout_width="42dp"
+                android:layout_height="29dp"
+                android:background="@drawable/ic_baseline_access_alarm_24"
+                android:gravity="bottom"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/timeView"
+                    android:text="1:23 pm"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    android:gravity="bottom"
+                     />
+
+
+
+
+
+
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="10dp"
+
+                />
+                <View
+                    android:id="@+id/venueView"
+                    android:layout_width="42dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_place_24"
+                    android:gravity="bottom"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                     />
+
+                <TextView
+                    android:id="@+id/venueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/jqb_24"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    android:autoSizeTextType="uniform"
+                     />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

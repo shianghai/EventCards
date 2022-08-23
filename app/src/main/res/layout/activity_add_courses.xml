@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/Theme.AppCompat">
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mainCardView"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/gray"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="center">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".AddEventsActivity"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Name"
+                    android:textSize="20sp"
+
+                    android:gravity="bottom"
+                    android:layout_marginHorizontal="5dp"
+                    android:textColor="@color/black"
+
+                    />
+
+                    <EditText
+                        android:id="@+id/editTextEventName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_below="@id/nameTextView"
+                        android:background="@drawable/edit_text_border"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+
+                   />
+                <TextView
+                    android:id="@+id/dayTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="bottom"
+                    android:text="Day"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/daysSpinner"
+                    android:entries="@array/spinnerItems"
+                    android:layout_marginHorizontal="5dp"
+                    android:padding="8dp"
+                    android:layout_marginBottom="15dp"
+
+                    />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:gravity="bottom"
+                    android:text="Time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTextTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:background="@drawable/edit_text_border"
+                    android:textColor="@color/black"
+                    android:padding="8dp"/>
+                <TextView
+                    android:id="@+id/placeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextTime"
+
+                    android:gravity="bottom"
+                    android:text="Venue"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:padding="8dp"/>
+
+                <EditText
+                        android:id="@+id/editTexVenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="15dp"
+
+                        android:background="@drawable/edit_text_border"
+                        android:textColor="@color/black"
+                         android:padding="8dp"
+                         />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:text="ADD"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</FrameLayout>

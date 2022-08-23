@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@color/gray"
+    android:id="@+id/noCardLl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_time_cards_currently_exists"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="380dp"
+        android:autoSizeTextType="uniform"
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_on_the_plus_icon_to_to_add"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="380dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"/>
+
+
+</LinearLayout>
